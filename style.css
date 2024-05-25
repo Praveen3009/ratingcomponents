@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: #141519;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #1f2630;
+}
+
+.rating-card,
+.thank-you-card {
+  text-align: center;
+}
+
+
+
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.rating-btn {
+  background-color: #262f38;
+  color: #7c8898;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rating-btn:hover {
+  background-color: #fb7413;
+  color: #fff;
+}
+
+.rating-btn:focus {
+  outline: none;
+  background-color: #959eac;
+  color: #fff;
+}
+
+.rating-btn.selected {
+  background-color: #fb7413;
+  color: #fff;
+}
+
+.submit-btn {
+  background-color: #fb7413;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: #fb7413;
+}
+
+.submit-btn:disabled {
+  background-color: #262f38;
+  color: #7c8898;
+  cursor: not-allowed;
+}
+
+.thank-you-card img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.rating-value {
+  background-color: #262f38;
+  color: #fb7413;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
